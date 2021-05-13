@@ -32,7 +32,10 @@ const Select = ({ label, value, children, ...delegated }) => {
   );
 };
 
-const Wrapper = styled.label``;
+const Wrapper = styled.label`
+  display: flex;
+  align-items: baseline;
+`;
 
 const VisibleLabel = styled.span`
   color: ${COLORS.gray[700]};
@@ -69,6 +72,7 @@ const DisplayedBit = styled.span`
     outline: 1px dotted #212121;
     outline: 5px auto -webkit-focus-ring-color;
   }
+  white-space: nowrap;
 `;
 
 const ChevronIcon = styled(Icon)`
